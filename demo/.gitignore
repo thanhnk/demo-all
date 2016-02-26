@@ -1,0 +1,9 @@
+wda-content/.settings/
+*.project
+*.classpath
+wda-bundle/target/
+wda-content/target/
+wda-bundle/.settings/
+.settings/
+*.vlt
+course.json

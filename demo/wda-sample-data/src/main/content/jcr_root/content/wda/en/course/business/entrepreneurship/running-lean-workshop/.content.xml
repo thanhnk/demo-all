@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/wda"
+        cq:lastModified="{Date}2016-02-17T17:54:34.835+08:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/wda/templates/course"
+        jcr:description="Learn How to Apply Lean Startup Techniques to Your Product and Raise Your Odds of Success"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Running Lean Workshop"
+        sling:resourceType="wda/components/page/course"
+        accessrights="lifetime Access"
+        android="{Boolean}true"
+        certificate="{Boolean}true"
+        discount="{Long}50"
+        en="true"
+        instructor="Ash Maurya "
+        ios="{Boolean}true"
+        lecture="30"
+        oldPrice="{Long}423"
+        skilllevel="All Levels"
+        videolength="4.5"
+        warranty="{Boolean}true">
+        <image
+            jcr:lastModified="{Date}2016-02-16T14:32:46.180+08:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0"/>
+        <image-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <image
+                jcr:created="{Date}2016-02-16T14:32:58.817+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-02-16T14:33:19.133+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/image"
+                fileReference="/content/dam/wda/business/entrepreneurship/running-lean-workshop.PNG"/>
+        </image-par>
+        <main-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <coursetext
+                jcr:created="{Date}2016-02-16T14:33:01.770+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-02-16T14:33:06.329+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wda/components/general/coursetext"
+                text="&lt;p>&lt;h3>Course Description&lt;/h3>&#xa;&lt;p>&lt;p>&lt;p>Save yourself months of wasted effort and the frustration of building something nobody wants by learning how to take the right action at the right time. In this Running Lean Workshop, you'll learn the methodology of the Lean Startup that will raise your odds of buiding successful products. Running Lean was developed through rigorous testing of the Lean Startup, Customer Development, and Bootstrapping techniques, and has been successfully applied to dozens of products ranging from b2c, enterprise, clean tech, and no tech products. What you'll learn * How do I find problems worth solving? * How do I document my business model? * How do I find early customers? * How do I systematically test my business model? * How do I build and measure what customers want?&lt;/p>&#xa;&lt;/p>&#xa;&lt;/p>&#xa;&lt;/p>&#xa;&lt;p>&lt;h3>What am I going to get from this course?&lt;/h3>&#xa;&lt;ul>&#xa;&lt;li>Over 30 lectures and 4.5 hours of content!&lt;/li>&#xa;&lt;li>Why startups fail?&lt;/li>&#xa;&lt;li>Document your core business model assumptions using a 1-page Lean Canvas&lt;/li>&#xa;&lt;li>Learn how to to identify what's riskiest in your startup&lt;/li>&#xa;&lt;li>Systematically test your startup through a series of experiments&lt;/li>&#xa;&lt;li>Plus, learn how to find early customers and test pricing&lt;/li>&#xa;&lt;li>All illustrated with a real product case-study taken from initial ideation to exit that shows you how to take these principles to practice.&lt;/li>&#xa;&lt;/ul>&#xa;&lt;/p>&#xa;&lt;p>&lt;h3>What is the target audience?&lt;/h3>&#xa;&lt;ul>&#xa;&lt;li>Anyone involved with bringing new products to market will benefit from this workshop:&lt;/li>&#xa;&lt;li>Entrepreneurs&lt;/li>&#xa;&lt;li>Builders - software developers, engineers.&lt;/li>&#xa;&lt;li>Designers&lt;/li>&#xa;&lt;li>Marketers&lt;/li>&#xa;&lt;li>Product Owners - product/project managers&lt;/li>&#xa;&lt;/ul>&#xa;&lt;/p>&#xa;&lt;p>&lt;h3>Curriculum&lt;/h3>&#xa;&lt;p>&lt;table>&#xa;&lt;tbody>&lt;tr>&lt;th>Section 1: Running Lean overview&lt;/th>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 1&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Introduction&lt;/p>&#xa;&lt;a href=&quot;https://www.udemy.com/new-lecture/60842/popup/&quot;>Preview&lt;/a>&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>02:48&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 2&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Why Are Startups Hard?&lt;/p>&#xa;&lt;a href=&quot;https://www.udemy.com/new-lecture/60844/popup/&quot;>Preview&lt;/a>&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>07:15&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 3&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>What Is Running Lean&lt;/p>&#xa;&lt;a href=&quot;https://www.udemy.com/new-lecture/60849/popup/&quot;>Preview&lt;/a>&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>07:57&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 4&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>About and Disclaimers&lt;/p>&#xa;&lt;a href=&quot;https://www.udemy.com/new-lecture/61067/popup/&quot;>Preview&lt;/a>&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>06:26&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 5&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Document Your Plan A&lt;/p>&#xa;&lt;a href=&quot;https://www.udemy.com/new-lecture/61069/popup/&quot;>Preview&lt;/a>&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>09:15&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 6&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Identify the riskiest parts of your plan&lt;/p>&#xa;&lt;a href=&quot;https://www.udemy.com/new-lecture/61070/popup/&quot;>Preview&lt;/a>&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>21:38&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 7&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Systematically Test Your Plan&lt;/p>&#xa;&lt;a href=&quot;https://www.udemy.com/new-lecture/61073/popup/&quot;>Preview&lt;/a>&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>10:17&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 8&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>The Process in Action&lt;/p>&#xa;&lt;a href=&quot;https://www.udemy.com/new-lecture/61075/popup/&quot;>Preview&lt;/a>&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>08:46&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 9&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>How I Iterated my book&lt;/p>&#xa;&lt;a href=&quot;https://www.udemy.com/new-lecture/62516/popup/&quot;>Preview&lt;/a>&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>23:48&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;th>Section 2: Documenting your plan A&lt;/th>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 10&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Brainstorm Possible Customers&lt;/p>&#xa;&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>12:57&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 11&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Sketching A Lean Canvas&lt;/p>&#xa;&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>04:32&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 12&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Problems &amp;amp; Customer Segments&lt;/p>&#xa;&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>08:55&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 13&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Unique Value Proposition&lt;/p>&#xa;&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>09:31&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 14&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Testing The UVP&lt;/p>&#xa;&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>11:47&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 15&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Solution&lt;/p>&#xa;&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>03:24&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 16&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Channels&lt;/p>&#xa;&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>01:54&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 17&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Finding Initial Prospects&lt;/p>&#xa;&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>07:16&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 18&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Building Inbound Channels&lt;/p>&#xa;&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>10:05&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 19&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Revenue Streams &amp;amp; Cost Structure&lt;/p>&#xa;&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>06:25&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 20&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>How To Price Your Product&lt;/p>&#xa;&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>13:04&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 21&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Key Metrics&lt;/p>&#xa;&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>10:56&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 22&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Unfair Advantage&lt;/p>&#xa;&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>15:33&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;th>Section 3: Identify the riskiest parts of your plan&lt;/th>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 23&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Three Types Of Risk&lt;/p>&#xa;&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>02:12&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 24&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Prioritize Where To Start&lt;/p>&#xa;&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>08:23&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 25&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Seek External Advice&lt;/p>&#xa;&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>06:36&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;th>Section 4: Systematically test your plan&lt;/th>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 26&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Test Your Plan With Experiments&lt;/p>&#xa;&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>09:04&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 27&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Iteration Meta Pattern On The Lean Canvas&lt;/p>&#xa;&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>06:29&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 28&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Understand Problem&lt;/p>&#xa;&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>06:22&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 29&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Define Solution&lt;/p>&#xa;&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>06:52&lt;/td>&#xa;&lt;/tr>&lt;tr>&lt;td>&amp;nbsp;&lt;/td>&#xa;&lt;td>Lecture 30&lt;/td>&#xa;&lt;td>&lt;p>&lt;p>Questions&lt;/p>&#xa;&lt;/p>&#xa;&lt;/td>&#xa;&lt;td>13:37&lt;/td>&#xa;&lt;/tr>&lt;/tbody>&lt;/table>&#xa;&lt;/p>&#xa;&lt;/p>&#xa;"
+                textIsRich="true"/>
+        </main-par>
+    </jcr:content>
+</jcr:root>

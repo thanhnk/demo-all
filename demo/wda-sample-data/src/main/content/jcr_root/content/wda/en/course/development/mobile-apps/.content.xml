@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/wda"
+        cq:lastModified="{Date}2016-02-17T17:54:28.359+08:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/wda/templates/courselist"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Mobile Apps"
+        jcr:uuid="a37c1980-ffa6-47a3-a00b-b519db667f8f"
+        sling:resourceType="wda/components/page/courselist">
+        <main-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <listcourse
+                jcr:created="{Date}2016-02-17T17:43:00.559+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-02-17T17:43:15.273+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wda/components/general/listcourse"
+                displayAs="news"
+                listFrom="children"
+                parentPage="/content/wda/en/course/development/mobile-apps"
+                tagsMatch="any"/>
+        </main-par>
+    </jcr:content>
+    <ios-9-and-swift-2--from-beginner-to-paid-professional/>
+    <android-6---master-android-marshmallow-development-with-java/>
+    <the-complete-ios-9-developer-course---build-18-apps/>
+    <the-complete-android-developer-course---build-14-apps/>
+</jcr:root>

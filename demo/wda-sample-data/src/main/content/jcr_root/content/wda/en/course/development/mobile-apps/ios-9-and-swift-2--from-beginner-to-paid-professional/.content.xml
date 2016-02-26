@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/wda"
+        cq:lastModified="{Date}2016-02-17T17:54:28.414+08:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/wda/templates/course"
+        jcr:description="The BEST online iOS 9 Swift 2 course online. Lets learn iOS 9 &amp; Swift 2"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="iOS 9 and Swift 2: From Beginner to Paid Professional"
+        sling:resourceType="wda/components/page/course"
+        accessrights="lifetime Access"
+        certificate="{Boolean}true"
+        discount="{Long}10"
+        en="true"
+        instructor="Mark Price"
+        ios="{Boolean}true"
+        lecture="147"
+        oldPrice="{Long}284"
+        skilllevel="All Levels"
+        videolength="38"
+        warranty="{Boolean}true">
+        <image
+            jcr:lastModified="{Date}2016-02-16T13:54:54.265+08:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0"/>
+        <image-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <image
+                jcr:created="{Date}2016-02-16T13:55:07.924+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-02-16T13:55:13.738+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/image"
+                fileReference="/content/dam/wda/development/mobile/iOS-9-and-Swift-2.PNG"/>
+        </image-par>
+        <main-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <coursetext
+                jcr:created="{Date}2016-02-16T13:55:20.682+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-02-16T13:55:20.682+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wda/components/general/coursetext"/>
+        </main-par>
+    </jcr:content>
+</jcr:root>
