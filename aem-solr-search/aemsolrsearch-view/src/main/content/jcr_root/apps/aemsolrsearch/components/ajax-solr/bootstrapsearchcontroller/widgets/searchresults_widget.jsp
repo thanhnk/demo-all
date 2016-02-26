@@ -69,7 +69,7 @@
             }
         }
 
-        var title = doc.title;
+        var title = doc.courseTitle;
         var output = '';
 
         if(this.manager.response.highlighting && this.manager.response.highlighting[doc.id]) {
@@ -87,12 +87,12 @@
         }
         
         if (snippet == ''){
-        	snippet = doc.description;
+        	snippet = doc.courseContent;
         }
 
         output += '<div class="result-card">';
-        output += '<a target="_blank" href="' + doc.id + '.html" class="bootstrap-title">' + title + '</a>';
-        output += '<div class="bootstrap-url">' + doc.id + '</div>';
+        output += '<a target="_blank" href="/content/wda/en/course-view.html?id=' + doc.id + '" class="bootstrap-title">' + title + '</a>';
+        output += '<div class="bootstrap-url">' + doc.courseObjective + '</div>';
         output += '<div>' + snippet + '</div></div>';
 
 
