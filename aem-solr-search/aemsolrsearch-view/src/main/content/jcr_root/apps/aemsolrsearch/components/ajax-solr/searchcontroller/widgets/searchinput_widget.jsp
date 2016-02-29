@@ -37,6 +37,7 @@
     }));
     
     var beginFacetItem = true;
+    var beginPhraseItem = true;
     jQuery("#query").autocomplete({
     	select: function( event, ui ) {
     		if (ui.item.facet != ''){
@@ -49,6 +50,7 @@
     	},
 	    source: function (request, response) {
 	    	beginFacetItem = true;
+	    	beginPhraseItem = true;
 	    	var result = [];
 	    	var keyword = '';
 	    	var keyword_point;
@@ -74,7 +76,7 @@
 	    			}
 	    			for (var i = 0; i < list.length; i=i+2){
 		            	if (list[i] != ''){
-		            		result.push({label:list[i], value:list[i], facet:''});
+		            		result.push({label:list[i], value:list[i], facet:'', phrase: true});
 		            	}
 		            }
 	    		}
@@ -100,6 +102,14 @@
 	}).autocomplete("instance")._renderItem = function(ul, item){
    		//alert('render');
    		//jQuery("#queryFacet").val(item.facet)
+   		if (item.phrase == true && beginPhraseItem){
+   			var li = $( "<li>" ).append(item.label).appendTo(ul);
+	        li.css('border-top', 'solid 1px gray');
+		    	li.css('margin-top', '5px');
+		    	li.css('padding-top', '5px');
+		    	beginPhraseItem = false;
+	        return li;
+   		}
    		if (item.facet != ''){
 	   		var li = $( "<li>" )
 		        .append(item.label + '<span class="facetInputSearch"><b> in ' + item.facet + '</b></span>')
