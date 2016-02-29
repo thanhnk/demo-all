@@ -110,7 +110,7 @@
 			<div class="row">
 				<div class="col-md-8 pb50">
 					<h3>Course Description</h3>
-					<%= StringUtils.isEmpty(course.getCourseContent())? course.getCourseDetails() : course.getCourseContent() %>
+					<%= StringUtils.isEmpty(course.getCourseContent())? "" : course.getCourseContent() %>
 				</div>
 				<div class="col-md-4 hidden-sm">
 					<cq:include path="right-par" resourceType="foundation/components/parsys" />

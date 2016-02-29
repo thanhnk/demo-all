@@ -21,8 +21,9 @@
           }
         });
         
-       	searchurl = this.manager.proxyUrl + '?' + 'qt=%2Fterms&limit=10&terms.sort=count&terms.fl=name&wt=velocity&v.template=suggest&corename=collection1';
+       	//searchurl = this.manager.proxyUrl + '?' + 'qt=%2Fterms&limit=10&terms.sort=count&terms.fl=name&wt=velocity&v.template=suggest&corename=collection1';
        		//+ '&q=' + $(this).val() + '&terms.prefix=' + $(this).val();
+       	searchurl = this.manager.proxyUrl + '?' + 'qt=%2Fselect&wt=json&corename=collection1&fl=courseTitle&q=*:*&facet=true&facet.field=name_auto&facet.mincount=1';
       },
 
       afterRequest: function () {
@@ -37,15 +38,16 @@
     
     jQuery("#query").autocomplete({
 	    source: function (request, response) {
-	        jQuery.get(searchurl + '&q=' + request.term + '&terms.prefix=' + request.term, {
-	            query: ''
-	        }, function (data) {
+	        jQuery.get(searchurl + '&facet.prefix=' + request.term, function (data) {
 	            // assuming data is a JavaScript array such as
 	            // ["one@abc.de", "onf@abc.de","ong@abc.de"]
 	            // and not a string
-	            var list = data.trim().split(' ');
+	            var obj = jQuery.parseJSON(data);
+	            console.log(obj);
+	            
+                var list = obj.facet_counts.facet_fields.name_auto;
 	            var result = [];
-	            for (var i = 0; i < list.length; i++){
+	            for (var i = 0; i < list.length; i=i+2){
 	            	if (list[i] != ''){
 	            		result.push(list[i]);
 	            	}

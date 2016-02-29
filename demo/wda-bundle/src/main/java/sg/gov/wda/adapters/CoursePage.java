@@ -29,7 +29,6 @@ public class CoursePage extends CourseContentType {
 	private String courseUrl;
 	private String courseCost;
 	private String courseHours;
-	private String courseDetails;
 	private String courseImageUrl;
 
 	private Date publishDate;
@@ -61,7 +60,6 @@ public class CoursePage extends CourseContentType {
 		final String courseHours = valueMap.get("courseHours", "");
 		final String status = valueMap.get("status", "");
 
-		final String courseDetails = valueMap.get("courseDetails", "");
 		final String courseImageUrl = valueMap.get("courseImageUrl", "");
 
 		final Date lastUpdate = valueMap.get(NameConstants.PN_LAST_MOD,
@@ -74,8 +72,7 @@ public class CoursePage extends CourseContentType {
 				.withCourseObjective(courseObjective).withCourseRef(courseRef)
 				.withCourseTitle(courseTitle).withCourseType(courseType)
 				.withCourseUrl(courseUrl).withLastUpdate(lastUpdate)
-				.withStatus(status).withCourseDetails(courseDetails)
-				.withCourseImageUrl(courseImageUrl);
+				.withStatus(status).withCourseImageUrl(courseImageUrl);
 
 		return article;
 	}
@@ -96,7 +93,6 @@ public class CoursePage extends CourseContentType {
 		json.put(CourseSchema.COURSECOST, getCourseCost());
 		json.put(CourseSchema.COURSEHOURS, getCourseHours());
 		json.put(CourseSchema.STATUS, getStatus());
-		json.put(CourseSchema.COURSEDETAILS, getCourseDetails());
 
 		json.put(CourseSchema.LAST_MODIFIED,
 				SolrTimestamp.convertToUtcAndUseNowIfNull(getLastUpdate()));
@@ -122,7 +118,6 @@ public class CoursePage extends CourseContentType {
 		doc.addField(CourseSchema.COURSECOST, getCourseCost());
 		doc.addField(CourseSchema.COURSEHOURS, getCourseHours());
 		doc.addField(CourseSchema.STATUS, getStatus());
-		doc.addField(CourseSchema.COURSEDETAILS, getCourseDetails());
 
 		doc.addField(CourseSchema.LAST_MODIFIED,
 				SolrTimestamp.convertToUtcAndUseNowIfNull(getLastUpdate()));
@@ -130,11 +125,6 @@ public class CoursePage extends CourseContentType {
 				SolrTimestamp.convertToUtcAndUseNowIfNull(getPublishDate()));
 
 		return doc;
-	}
-
-	public CoursePage withCourseDetails(String courseDetails) {
-		this.courseDetails = courseDetails;
-		return this;
 	}
 
 	public CoursePage withCourseImageUrl(String courseImageUrl) {
@@ -317,14 +307,6 @@ public class CoursePage extends CourseContentType {
 
 	public void setStatus(String status) {
 		this.status = status;
-	}
-
-	public String getCourseDetails() {
-		return courseDetails;
-	}
-
-	public void setCourseDetails(String courseDetails) {
-		this.courseDetails = courseDetails;
 	}
 
 	public String getCourseImageUrl() {

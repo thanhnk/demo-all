@@ -68,7 +68,7 @@
 									<th>Objectives</th>
 									<th>Content</th>
 									<th>Language</th>
-									<th>Url</th>
+									<!-- <th>Url</th> -->
 									<th>Cost</th>
 									<th>Hours</th>
 									<th style="width: 110px">&nbsp;</th>
@@ -139,14 +139,24 @@
 	
 	function addCourseRow(table, row){
 		var html = '<tr id="' + row.id + '">';
-		html += '<td>' + row.courseRef + '</td>';
+		html += '<td><a target="_blank" href="/content/wda/en/course-view.html?id=' + row.id + '">' + row.courseRef + '</a></td>';
 		html += '<td>' + row.courseTitle + '</td>';
 		html += '<td>' + row.courseType + '</td>';
 		html += '<td>' + row.courseArea + '</td>';
-		html += '<td>' + row.courseObjective + '</td>';
-		html += '<td>' + row.courseContent + '</td>';
+		
+		var courseObjective = row.courseObjective;
+		if (courseObjective.length > 80){
+			courseObjective = courseObjective.substring(0, 80) + ' ...';
+		}
+		html += '<td>' + courseObjective + '</td>';
+		
+		var courseContent = row.courseContent;
+		if (courseContent.length > 80){
+			courseContent = courseContent.substring(0, 80) + ' ...';
+		}
+		html += '<td>' + courseContent + '</td>';
 		html += '<td>' + row.courseLang + '</td>';
-		html += '<td>' + row.courseUrl + '</td>';
+		//html += '<td>' + row.courseUrl + '</td>';
 		html += '<td>' + row.courseCost + '</td>';
 		html += '<td>' + row.courseHours + '</td>';
 		html += '<td course="' + row.id + '">';

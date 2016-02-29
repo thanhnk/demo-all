@@ -89,6 +89,9 @@
         if (snippet == ''){
         	snippet = doc.courseContent;
         }
+        if (snippet.length > 200){
+        	snippet = snippet.substring(0, 200) + ' ...';
+        }
 
         output += '<div class="result-card">';
         output += '<a target="_blank" href="/content/wda/en/course-view.html?id=' + doc.id + '" class="bootstrap-title">' + title + '</a>';

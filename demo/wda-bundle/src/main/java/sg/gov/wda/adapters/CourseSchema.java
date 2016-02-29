@@ -18,7 +18,6 @@ public interface CourseSchema {
 	public static final String COURSECOST = "courseCost";
 	public static final String COURSEHOURS = "courseHours";
 
-	public static final String COURSEDETAILS = "courseDetails";
 	public static final String COURSEIMAGEURL = "courseImageUrl";
 
 	public static final String STATUS = "status";

@@ -41,10 +41,6 @@
             <textarea class="form-control" id="courseContent" name="courseContent" required></textarea>
           </div>
           <div class="form-group">
-            <label for="courseDetails" class="control-label">Course Details:</label>
-            <textarea class="form-control" id="courseDetails" name="courseDetails"></textarea>
-          </div>
-          <div class="form-group">
             <label for="courseImageUrl" class="control-label">Image URL:</label>
             <input type="text" class="form-control" id="courseImageUrl" name="courseImageUrl">
           </div>

@@ -2450,9 +2450,9 @@ function logout() {
         
     
 
-<a href="/content/wda/en/courses/">
+<!-- <a href="/content/wda/en/courses/">
     <img class="udemy-logo" src="https://www.udemy.com/staticx/udemy/images/v4/logo-green.png" alt="sg" width="100">
-</a>
+</a> -->
 
 <div class="general-header-right fx fxac fxje">
     
