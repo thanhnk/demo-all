@@ -105,12 +105,10 @@ public class CourseServiceImpl implements CourseService {
 			String courseId = UUID.randomUUID().toString();
 			Node course = JcrUtils.getOrAddNode(root, courseId,
 					JcrConstants.NT_UNSTRUCTURED);
-			JcrResourceUtil.setProperty(course, NameConstants.PN_CREATED,
-					new Date());
+			JcrResourceUtil.setProperty(course, "created", new Date());
 			JcrResourceUtil.setProperty(course, NameConstants.PN_CREATED_BY,
 					request.getUserPrincipal().getName());
-			JcrResourceUtil.setProperty(course, NameConstants.PN_LAST_MOD,
-					new Date());
+			JcrResourceUtil.setProperty(course, "lastModified", new Date());
 			JcrResourceUtil.setProperty(course, NameConstants.PN_LAST_MOD_BY,
 					request.getUserPrincipal().getName());
 
@@ -195,6 +193,8 @@ public class CourseServiceImpl implements CourseService {
 		params.put("type", JcrConstants.NT_UNSTRUCTURED);
 		params.put("p.offset", "0");
 		params.put("p.limit", "50");
+		params.put("orderby", "lastModified");
+		params.put("orderby.sort", "desc");
 
 		String searchStatus = RequestUtil.getParameter(request, "searchStatus",
 				"");

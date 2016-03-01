@@ -10,6 +10,7 @@
 <cq:includeClientLib categories="wda.coursemanagement"/>
 <%
 	String loginedUser = request.getUserPrincipal().getName();
+
 %>
 <div class="contentSection">
 	<div class="container">
@@ -162,7 +163,7 @@
 		html += '<td course="' + row.id + '">';
 		var updateLink = '<a href="#" onclick="updateCourse(\'' + row.id + '\')">Edit</a>';
 		html += updateLink;
-		if (row.status == 'new'){
+		if (row.status == 'new' && loginedUser == 'admin'){
 			var approveLink = '<a href="#" onclick="approveCourse(\'' + row.id + '\')">Approve</a>';
 			html += '&nbsp;|&nbsp;' + approveLink
 		}
