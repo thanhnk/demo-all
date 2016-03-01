@@ -7,7 +7,7 @@
   --%>
 
 <c:if test="${resultsEnabled}">
-
+    
     AjaxSolr.ResultWidget = AjaxSolr.AbstractWidget.extend({
       start: 0,
 
@@ -51,6 +51,13 @@
           $(this.target).append(this.template(doc));
 
         }
+        
+        if (this.manager.response.spellcheck && this.manager.response.spellcheck.suggestions
+			&& this.manager.response.spellcheck.suggestions.collation){
+			var correctKey = this.manager.response.spellcheck.suggestions.collation.collationQuery;
+        	var doYouMean = 'Did you mean: <b class="searchForSpellCheck">'+ correctKey + '</b>?';
+        	$(this.target).prepend(doYouMean);
+        }
       },
 
       template: function (doc) {
@@ -69,34 +76,29 @@
             }
         }
 
-        var title = doc.courseTitle;
+        var courseTitle = doc.courseTitle;
+        var courseObjective = doc.courseObjective;
+        var courseContent = doc.courseContent;
         var output = '';
+        
+        
 
         if(this.manager.response.highlighting && this.manager.response.highlighting[doc.id]) {
-            if(this.manager.response.highlighting[doc.id]['teaser']) {
-                var teaserSnippet = this.manager.response.highlighting[doc.id]['teaser'][0];
-
-                if (teaserSnippet.length > 250) {
-                    snippet = teaserSnippet.substring(0, 250);
-                    snippet += '<span style="display:none">' + teaserSnippet.substring(250);
-                    snippet += '</span> <a href="#" class="more">more</a>';
-                } else {
-                    snippet = teaserSnippet;
-                }
+            if(this.manager.response.highlighting[doc.id]['courseTitle']) {
+            	courseTitle = this.manager.response.highlighting[doc.id]['courseTitle'][0];
+            }
+            if(this.manager.response.highlighting[doc.id]['courseObjective']) {
+            	courseObjective = this.manager.response.highlighting[doc.id]['courseObjective'][0];
+            }
+            if(this.manager.response.highlighting[doc.id]['courseContent']) {
+            	courseContent = this.manager.response.highlighting[doc.id]['courseContent'][0];
             }
         }
         
-        if (snippet == ''){
-        	snippet = doc.courseContent;
-        }
-        if (snippet.length > 200){
-        	snippet = snippet.substring(0, 200) + ' ...';
-        }
-
         output += '<div class="result-card">';
-        output += '<a target="_blank" href="/content/wda/en/course-view.html?id=' + doc.id + '" class="bootstrap-title">' + title + '</a>';
-        output += '<div class="bootstrap-url">' + doc.courseObjective + '</div>';
-        output += '<div>' + snippet + '</div></div>';
+        output += '<a target="_blank" href="/content/wda/en/course-view.html?id=' + doc.id + '" class="bootstrap-title">' + courseTitle + '</a>';
+        output += '<div class="bootstrap-url">' + courseObjective + '</div>';
+        output += '<div>' + courseContent + '</div></div>';
 
 
         return output;
@@ -125,4 +127,6 @@
       id: '${resultsId}',
       target: '${resultsTarget}'
     }));
+    
+    
 </c:if>

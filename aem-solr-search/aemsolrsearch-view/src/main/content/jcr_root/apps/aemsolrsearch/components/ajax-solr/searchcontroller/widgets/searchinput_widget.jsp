@@ -64,7 +64,7 @@
 	    			keyword_point = list[1];
 		    		for (var i = 0; i < list.length; i=i+2){
 		            	if (list[i] != ''){
-		            		result.push({label:list[i], value:list[i], facet:''});
+		            		result.push({label:list[i], value:list[i], facet:'',term:request.term});
 		            	}
 		            }
 	            }
@@ -76,7 +76,7 @@
 	    			}
 	    			for (var i = 0; i < list.length; i=i+2){
 		            	if (list[i] != ''){
-		            		result.push({label:list[i], value:list[i], facet:'', phrase: true});
+		            		result.push({label:list[i], value:list[i], facet:'', phrase: true,term:request.term});
 		            	}
 		            }
 	    		}
@@ -89,7 +89,7 @@
 	    			if (list.length > 0){
 	    				for (var i = 0; i < list.length; i=i+2){
 			            	if (list[i] != ''){
-			            		result.push({label:keyword, value:keyword, facet:list[i]});
+			            		result.push({label:keyword, value:keyword, facet:list[i],term:request.term});
 			            	}
 			            }
 	    			}
@@ -102,8 +102,12 @@
 	}).autocomplete("instance")._renderItem = function(ul, item){
    		//alert('render');
    		//jQuery("#queryFacet").val(item.facet)
+   		
+   		var label = '<b>' + item.term + '</b>' + item.label.substring(item.term.length);
+   		
+   		
    		if (item.phrase == true && beginPhraseItem){
-   			var li = $( "<li>" ).append(item.label).appendTo(ul);
+   			var li = $( "<li>" ).append(label).appendTo(ul);
 	        li.css('border-top', 'solid 1px gray');
 		    	li.css('margin-top', '5px');
 		    	li.css('padding-top', '5px');
@@ -112,8 +116,9 @@
    		}
    		if (item.facet != ''){
 	   		var li = $( "<li>" )
-		        .append(item.label + '<span class="facetInputSearch"><b> in ' + item.facet + '</b></span>')
+		        .append(label + '<span class="facetInputSearch"><b> in ' + item.facet + '</b></span>')
 		        .appendTo(ul);
+		        li.css('color', '#D2691E');
 		    if (beginFacetItem){
 		    	li.css('border-top', 'solid 1px gray');
 		    	li.css('margin-top', '5px');
@@ -124,7 +129,7 @@
    		}
    		
 		return $( "<li>" )
-	        .append(item.label)
+	        .append(label)
 	        .appendTo(ul);
    		
    	};
