@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:createdBy="admin"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    courseArea="Development / Programming Languages"
+    courseContent="Learn how to develop programs in the Python programming language. This gives you more opportunities for jobs and career advancement because Python is one of the most requested skills in 2015-2016!&#xd;&#xa;&#xd;&#xa;This course assumes no previous programming and/or Python experience. If youâve never programmed a computer before, or if you know another programming language and want to learn Python, this course will teach you how.&#xd;&#xa;&#xd;&#xa;The instructors have a collective sixty years of commercial software development experience, meaning you are learning the right way to program to maximize your future development potential."
+    courseCost="40"
+    courseDetails=""
+    courseHours="117"
+    courseImageUrl="https://udemy-images.udemy.com/course/750x422/629302_8a2d.jpg"
+    courseLang="English"
+    courseObjective="Earn More Money And Make Yourself More Marketable With Real Life Python Programming Experience From Expert Instructors"
+    courseRef="UDM-08"
+    courseTitle="Python - Learn Python From Scratch In No Time Flat!"
+    courseType="NSRSAC"
+    courseUrl="https://www.udemy.com/python-the-complete-python-developer-course/?dtcode=VDBx96R4C5lE"
+    status="approved"/>

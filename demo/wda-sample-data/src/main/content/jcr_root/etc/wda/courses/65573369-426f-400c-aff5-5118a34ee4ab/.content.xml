@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:createdBy="admin"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    courseArea="Trade and Craft"
+    courseContent="The course is tailored to provide skills and knowledge pertaining to maintaining a safe work environment, using proper lifting, pushing and pulling techniques, using equipment safely and following directions for handling hazardous materials."
+    courseCost="40"
+    courseDetails=""
+    courseHours="15"
+    courseImageUrl=""
+    courseLang="Malay"
+    courseObjective="The &quot;Maintain Safe and Secure Working Environment&quot; course enables an individual to acquire the skills and knowledge to safely operate within a Food and Beverage Production Environment."
+    courseRef="CRS-Q-0005155-MF"
+    courseTitle="Maintain Safe &amp; Secure Working Environment"
+    courseType="WSQ"
+    courseUrl=""
+    status="approved"/>

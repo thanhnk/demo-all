@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:createdBy="admin"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    courseArea="Healthcare"
+    courseContent="Ability to perform a range of work activities, some of which are non routine and complex in a variety of contexts&#xa;Â The knowledge acquired is mainly factual or procedural with some understanding of relationships and associations&#xa;Â Work activities comprise tasks employing higher skills sets mainly undertaken by frontline supervisors involving some accountability within specified boundaries&#xa;Â Activities are carried out under frequent supervision requiring some judgment or reasoning&quot;"
+    courseCost="6"
+    courseHours="0"
+    courseLang="Chinese"
+    courseObjective="This objective of this qualification is to learners with the skills and knowledge required to work in the Senior Services sub sector of the Community and Social Services Sector at a WSQ Level 2 position."
+    courseRef="CRS-Q-0001290-CS"
+    courseTitle="Assist Clients with Personal Hygiene and Grooming 1"
+    courseType="WSQ"
+    courseUrl=""
+    status="approved"/>

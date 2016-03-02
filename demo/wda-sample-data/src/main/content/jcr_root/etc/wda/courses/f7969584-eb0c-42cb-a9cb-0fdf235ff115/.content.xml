@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:createdBy="admin"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    courseArea="Development / Programming Languages"
+    courseContent="You'll get a full understanding of how to program with Python and how to use it in conjunction with scientific computing modules and libraries to analyze data.&#xd;&#xa;&#xd;&#xa;You will also get lifetime access to over 100 example python code notebooks, new and updated videos, as well as future additions of various data analysis projects that you can use for a portfolio to show future employers!"
+    courseCost="35"
+    courseDetails=""
+    courseHours="110"
+    courseImageUrl="https://udemy-images.udemy.com/course/750x422/396876_cc92_7.jpg"
+    courseLang="English"
+    courseObjective="Learn python and how to use it to analyze,visualize and present data. Includes tons of sample code and hours of video!"
+    courseRef="UDM-05"
+    courseTitle="Learning Python for Data Analysis and Visualization"
+    courseType="WSQ"
+    courseUrl="https://www.udemy.com/learning-python-for-data-analysis-and-visualization/?dtcode=PJYDbeh4C5lE"
+    status="approved"/>

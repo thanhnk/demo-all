@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:createdBy="admin"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    courseArea="Information and Communications"
+    courseContent="As per CTAG"
+    courseCost="15"
+    courseDetails=""
+    courseHours="5"
+    courseImageUrl=""
+    courseLang="English"
+    courseObjective="As per CTAG"
+    courseRef="CRS-Q-0005170-ES"
+    courseTitle="Communication and Relationship Management - Operations Level"
+    courseType="WSQ"
+    courseUrl=""
+    status="approved"/>

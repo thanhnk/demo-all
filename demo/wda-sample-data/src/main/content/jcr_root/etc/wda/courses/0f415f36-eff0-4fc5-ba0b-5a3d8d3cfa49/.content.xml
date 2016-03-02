@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:createdBy="admin"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    courseArea="Design / Game Design"
+    courseContent="In this course I'll use my 10+ years of experience to teach you all you need to know to start making your own pixel art. You'll go from zero to full speed in no time with simple exercises that will teach you the foundations as well as advanced concepts that help give your pixel art creations that professional look.&#xd;&#xa;&#xd;&#xa;Featuring over 6 hours of footage, you'll be able to follow step by step as I take you through the creation of some really cool pixel art!"
+    courseCost="35"
+    courseDetails=""
+    courseHours="79"
+    courseImageUrl="https://udemy-images.udemy.com/course/750x422/397936_513f.jpg"
+    courseLang="English"
+    courseObjective="The essential course for creating stunning pixel art graphics for video-games or stylish illustrations and designs"
+    courseRef="UDM-09"
+    courseTitle="Pixel art for Video games"
+    courseType="NSRSAC"
+    courseUrl="https://www.udemy.com/pixel-art-for-video-games/?dtcode=8ESK4xG4C5lE"
+    status="approved"/>

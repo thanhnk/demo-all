@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:createdBy="admin"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    courseArea="Food and Beverages"
+    courseContent="1. Describe and recommend wine.&#xa;2. Open and serve sparkling wine.&#xa;3. Open and serve wine.&#xa;4. Decant and serve wine.&quot;"
+    courseCost="30"
+    courseDetails=""
+    courseHours="5"
+    courseImageUrl=""
+    courseLang="Malay"
+    courseObjective="This unit aims to equip the learner with the knowledge and application skills in provide wine service to workplace."
+    courseRef="CRS-Q-0005157-FB"
+    courseTitle="Provide Wine Service"
+    courseType="WSQ"
+    courseUrl=""
+    status="approved"/>

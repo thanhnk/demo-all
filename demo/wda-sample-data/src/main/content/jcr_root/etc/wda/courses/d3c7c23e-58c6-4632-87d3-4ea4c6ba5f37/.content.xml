@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:createdBy="admin"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    courseArea="Others"
+    courseContent="Provide Quality Service"
+    courseCost="30"
+    courseHours="10"
+    courseLang="English"
+    courseObjective="Provide Quality Service"
+    courseRef="CRS-A-0001790-CNG"
+    courseTitle="Provide Quality Service 1"
+    courseType="NSRSAC"
+    courseUrl=""
+    status="approved"/>

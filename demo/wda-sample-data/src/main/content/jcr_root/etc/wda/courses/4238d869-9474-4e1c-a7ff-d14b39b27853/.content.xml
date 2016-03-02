@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:createdBy="admin"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    courseArea="Others"
+    courseContent="Provide infant and toddler caregiving services for household"
+    courseCost="50"
+    courseDetails=""
+    courseHours="10"
+    courseImageUrl=""
+    courseLang="English"
+    courseObjective="Provide infant and toddler caregiving services for household"
+    courseRef="CRS-A-0004260-DHS"
+    courseTitle="Provide infant and toddler caregiving services for household"
+    courseType="NSRSAC"
+    courseUrl=""
+    status="approved"/>

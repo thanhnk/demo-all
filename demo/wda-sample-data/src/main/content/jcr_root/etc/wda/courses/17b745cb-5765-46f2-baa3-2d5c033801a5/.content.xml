@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:createdBy="admin"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    courseArea="Development / Mobile Apps"
+    courseContent="It doesn't matter if you're a complete novice or an expert app developerâNOW is the time to hop aboard the Android M bus and grab your golden ticket to app developing heaven (before everyone else does)!&#xd;&#xa;&#xd;&#xa;Android M represents a MAMMOTH opportunity. Whether you're looking to boost your income, change your career, or who knowsâ¦ become the next Mark Zuckerberg!&#xd;&#xa;&#xd;&#xa;Join thousands of budding app developers, champing at the bit to get started on Google's best, most polished and most easily controlled platform â EVER."
+    courseCost="35"
+    courseDetails=""
+    courseHours="230"
+    courseImageUrl="https://udemy-images.udemy.com/course/750x422/428526_9c24_2.jpg"
+    courseLang="English"
+    courseObjective="Learn to make Android apps by building real apps including Uber and Instagram clones. Android Wear included!"
+    courseRef="UDM-06"
+    courseTitle="The Complete Android Developer Course - Build 14 Apps"
+    courseType="WSQ"
+    courseUrl="https://www.udemy.com/the-complete-android-developer-course/?dtcode=7C02J4B4C5lE"
+    status="approved"/>

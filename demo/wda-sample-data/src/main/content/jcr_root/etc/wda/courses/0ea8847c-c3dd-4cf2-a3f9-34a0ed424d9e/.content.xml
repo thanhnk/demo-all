@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:createdBy="admin"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    courseArea="Others"
+    courseContent="Clean furniture and furnishings"
+    courseCost="0"
+    courseDetails=""
+    courseHours="0"
+    courseImageUrl=""
+    courseLang="English"
+    courseObjective="Clean furniture and furnishings"
+    courseRef="CRS-A-0003896-CNG"
+    courseTitle="Clean furniture and furnishings"
+    courseType="NSRSAC"
+    courseUrl=""
+    status="approved"/>

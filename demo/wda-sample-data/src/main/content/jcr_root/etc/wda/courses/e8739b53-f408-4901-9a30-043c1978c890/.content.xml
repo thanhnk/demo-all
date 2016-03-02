@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:createdBy="admin"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    courseArea="Domestic Cleaning"
+    courseContent="Basic Food Hygiene Course"
+    courseCost="0"
+    courseHours="10"
+    courseLang="Malay"
+    courseObjective="To be equipped &amp; train food handler the basic knowlede of food hygiene practice."
+    courseRef="CRS-Q-0001299-FB"
+    courseTitle="WSQ Food Hygiene Course"
+    courseType="WSQ"
+    courseUrl=""
+    status="approved"/>

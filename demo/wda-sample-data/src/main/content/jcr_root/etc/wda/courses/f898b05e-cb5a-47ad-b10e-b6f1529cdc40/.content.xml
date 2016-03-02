@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:createdBy="author"
+    jcr:lastModifiedBy="author"
+    jcr:primaryType="nt:unstructured"
+    courseArea="Process and Product Engineering"
+    courseContent="&quot;1. Interpret relevant parts of permit to work.&#xd;&#xa;2. Ascertain risks and hazards within the scope of work for the permit to be raised.&#xd;&#xa;3. Minimise the risks and hazards associated with work to be done.&#xd;&#xa;4. Perform work within the requirements of issued permit/s.&#xd;&#xa;5. Close and/or withdraw issued permit.&quot;"
+    courseCost="0"
+    courseHours="14"
+    courseImageUrl=""
+    courseLang="English"
+    courseObjective="To identify, initiate and implement the procedures and processes necessary to comply with Permit to Work system guidelines for ensuring the safety of themselves and others"
+    courseRef="CRS-Q-0002397-PI"
+    courseTitle="Work in accordance with an issued permit."
+    courseType="WSQ"
+    courseUrl=""
+    status="new"/>

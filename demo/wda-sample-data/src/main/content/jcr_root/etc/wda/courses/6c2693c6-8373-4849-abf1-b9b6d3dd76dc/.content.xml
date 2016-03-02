@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:createdBy="admin"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    courseArea="Food and Beverages"
+    courseContent="Set up and prepare non-alcoholic beverages&#xa;Reconsitute beverage mixes&#xa;Brew coffee&#xa;Brew tea"
+    courseCost="45"
+    courseDetails=""
+    courseHours="12"
+    courseImageUrl=""
+    courseLang="English"
+    courseObjective="To equip trainees with the skills and knowledge to prepare non-alcoholic beverages"
+    courseRef="CRS-Q-0005202-FB"
+    courseTitle="Prepare Non-Alcoholic Beverages"
+    courseType="WSQ"
+    courseUrl=""
+    status="approved"/>

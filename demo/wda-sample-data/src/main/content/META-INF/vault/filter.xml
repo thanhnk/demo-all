@@ -3,4 +3,5 @@
     <filter root="/content/wda"/>
     <filter root="/content/dam/wda"/>
     <filter root="/etc/tags/wda"/>
+    <filter root="/etc/wda"/>
 </workspaceFilter>

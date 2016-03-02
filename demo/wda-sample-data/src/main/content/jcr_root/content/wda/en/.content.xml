@@ -9,7 +9,8 @@
         jcr:primaryType="cq:PageContent"
         jcr:title="English"
         sling:resourceType="/libs/foundation/components/redirect"/>
-    <courses/>
     <home/>
-    <course/>
+    <courses/>
+    <course-management/>
+    <course-view/>
 </jcr:root>

@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:designPath="/etc/designs/wda"
-        cq:lastModified="{Date}2016-02-23T14:28:09.404+08:00"
+        cq:lastModified="{Date}2016-02-23T16:27:40.884+08:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/wda/templates/course"
         jcr:description="Web development from scratch in 6 weeks. HTML, JS, CSS, PHP, MySQL, Bootstrap, Wordpress, APIs, Mobile Apps all covered. Lifetime access with no subscription on Udemy.com."
@@ -14,12 +14,13 @@
         category="[wda:development]"
         certificate="{Boolean}true"
         en="true"
+        instructor="/home/users/geometrixx/carlene.j.avery@mailinator.com"
         lecture="236"
         oldPrice="{Long}22"
         skilllevel="Intermediate"
         zh="true">
         <image
-            jcr:lastModified="{Date}2016-02-23T14:26:30.967+08:00"
+            jcr:lastModified="{Date}2016-02-23T16:27:40.834+08:00"
             jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
             imageRotate="0"/>
@@ -36,5 +37,19 @@
                 text="&lt;p>&lt;h3>Course Description&lt;/h3>&#xa;&lt;p>&lt;p>&lt;p>** The most 5* ratings of any paid course on Udemy **&lt;/p>&#xa;&lt;p>Looking to boost your income as a web developer? Or maybe you're seeking a career change that gives you more free time and flexibility?&lt;/p>&#xa;&lt;p>Whatever your motivation to become a pro web developer, you've come to the right place.&lt;/p>&#xa;&lt;p>&lt;i>The Complete Web Developer Course&lt;/i>&amp;nbsp;is THE most comprehensive, cost-effective and career-enhancing course you'll find on the web – or your money back.&lt;/p>&#xa;&lt;p>It's a one-stop-shop for everything you need to start creating professional websites that engage visitors, call them to action and ultimately - make you money!&lt;/p>&#xa;&lt;p>This fast, effective course takes you easily from zero skills to fee-earning web developer in just six weeks.&lt;/p>&#xa;&lt;p>Not only that but you'll get unlimited web hosting for one year. So you can start earning cash before you've even finished.&lt;/p>&#xa;&lt;p>What's involved?&lt;/p>&#xa;&lt;p>You'll gain immediate access to 11 painstakingly-designed chapters, each developed with ease of learning in mind. Using my background as a Cambridge University mathematics graduate and professional code teacher I've created crystal-clear, original content which you'll find easy to understand - and more importantly - to absorb.&lt;/p>&#xa;&lt;p>You'll find learning both quick and fun. And, I've used techniques proven to effortlessly lock that knowledge in, as you gallop through each comprehensive chapter.&lt;/p>&#xa;&lt;p>If you're looking for a genuinely effective course that equips you to build stunningly presented, websites that will start earning you cash, I personally guarantee this is the number one course for you.&lt;/p>&#xa;&lt;p>&lt;u>Don't believe me? I offer a full money back guarantee, so long as you request it within 30 days of your purchase of the course.&lt;/u>&lt;/p>&#xa;&lt;p>Are you ready to transform your world and become a confident, cash-earning web developer?&lt;/p>&#xa;&lt;p>Here's what you get with&amp;nbsp;&lt;i>The Complete Web Developer Course&lt;/i>:&lt;/p>&#xa;&lt;p>You'll get access to twelve chapters that will give you a deep understanding of each topic.&lt;/p>&#xa;&lt;p>Each chapter is supported with over 28 hours of clear, engaging video tutorials and practical website challenges.&lt;/p>&#xa;&lt;p>All at your fingers tips. Instantly.&lt;/p>&#xa;&lt;ul>&#xa;&lt;p>·The course starts with the basics. I'll show you the tips and tricks to work effortlessly with web technologies like HTML, CSS and JavaScript.&lt;/p>&#xa;&lt;p>·Once you're doing that in your sleep, I'll show you how to build your own responsive websites using more advanced techniques such as iQuery PHP, MySQL and Twitter Bootstrap.&lt;/p>&#xa;&lt;p>·By then you'll be developing blogs and eCommerce sites with Wordpress, and learn intelligent ways to add dynamic content, using APls to connect to sites such as Google Maps and Facebook.&lt;/p>&#xa;&lt;p>·As Richard Branson says, 'The best way of learning is by doing,' so you'll complete website challenges at every section. As you painlessly tick them off, you'll use your skills to put a site together as you go. The final challenge is a full Twitter clone.&lt;/p>&#xa;&lt;/ul>&#xa;&lt;p>Over 11 chapters you will learn:&lt;/p>&#xa;&lt;ul>&#xa;&lt;p>·Setting up your (free) hosting&lt;/p>&#xa;&lt;p>·HTML&lt;/p>&#xa;&lt;p>·CSS&lt;/p>&#xa;&lt;p>·Javascript&lt;/p>&#xa;&lt;p>·jQuery&lt;/p>&#xa;&lt;p>·CMSs and WordPress&lt;/p>&#xa;&lt;p>·Responsive Design&lt;/p>&#xa;&lt;p>·PHP Coding&lt;/p>&#xa;&lt;p>·MySQL Databases&lt;/p>&#xa;&lt;p>·APIs&lt;/p>&#xa;&lt;p>·Mobile Apps&lt;/p>&#xa;&lt;p>·&lt;i>&lt;u>Bonus Chapter: How to make $10,000 while learning to code&lt;/u>&lt;/i>&lt;/p>&#xa;&lt;/ul>&#xa;&lt;p>What else will you get?&lt;/p>&#xa;&lt;ul>&#xa;&lt;p>·A friendly, informal community to support you every step of the way&lt;/p>&#xa;&lt;p>·Personal contact with me, the course tutor&lt;/p>&#xa;&lt;p>·Ebooks that will show you how to start earning before you've even finished&lt;/p>&#xa;&lt;p>·Lifetime access to course materials&lt;/p>&#xa;&lt;p>·Hands-on learning to lock that knowledge in&lt;/p>&#xa;&lt;p>·A deep understanding of how to code, design and build powerful websites&lt;/p>&#xa;&lt;p>·UNLIMITED WEB HOSTING FOR ONE YEAR (worth $199)&lt;/p>&#xa;&lt;/ul>&#xa;&lt;p>You'll never have to waste your time and hard-earned cash learning from books, expensive online courses and YouTube videos. With TheComplete Web Developer Course you get everything you need, all under one convenient, easy to navigate platform. Plus, you will get fast, friendly, responsive support by email, Twitter and on the Udemy forums.&lt;/p>&#xa;&lt;p>I will never leave you hanging!&lt;/p>&#xa;&lt;p>Check out my bio to see how I was able to give up my successful career to teach others to code part time. Since making that decision, I've never looked back.&lt;/p>&#xa;&lt;p>It doesn't matter how old you are or what you do professionally. I guarantee that ANYONE can benefit from this course, whether it's earning a bit of extra cash on the side or changing career altogether.&lt;/p>&#xa;&lt;p>&lt;u>So what&amp;nbsp;&lt;i>are you waiting for? Transform your world and sign up now to get a free copy of my exclusive 76-page ebook 'How to make $10,000 while learning to code'.&lt;/i>&lt;/u>&lt;/p>&#xa;&lt;/p>&#xa;&lt;/p>&#xa;&lt;/p>&#xa;&lt;p>&lt;h3>What are the requirements?&lt;/h3>&#xa;&lt;ul>&#xa;&lt;li>No pre-knowledge required&lt;/li>&#xa;&lt;li>Any computer - Windows, OSX or Linux&lt;/li>&#xa;&lt;li>No special software required&lt;/li>&#xa;&lt;/ul>&#xa;&lt;/p>&#xa;&lt;p>&lt;h3>What am I going to get from this course?&lt;/h3>&#xa;&lt;ul>&#xa;&lt;li>Over 236 lectures and 28 hours of content!&lt;/li>&#xa;&lt;li>Develop a website or app for your business&lt;/li>&#xa;&lt;li>Learn how to make beautiful, interactive websites&lt;/li>&#xa;&lt;li>Develop mobile applications&lt;/li>&#xa;&lt;li>Earn money from your new skills&lt;/li>&#xa;&lt;/ul>&#xa;&lt;/p>&#xa;&lt;p>&lt;h3>What is the target audience?&lt;/h3>&#xa;&lt;ul>&#xa;&lt;li>Anyone wanting to learn how to build websites and apps&lt;/li>&#xa;&lt;li>People wanting to make a living (or side-income) from web development&lt;/li>&#xa;&lt;/ul>&#xa;&lt;/p>&#xa;"
                 textIsRich="true"/>
         </main-par>
+        <image-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <adaptiveimage
+                jcr:created="{Date}2016-02-23T14:56:06.547+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-02-23T14:56:32.550+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/adaptiveimage"
+                imageRotate="0">
+                <file/>
+            </adaptiveimage>
+        </image-par>
     </jcr:content>
 </jcr:root>

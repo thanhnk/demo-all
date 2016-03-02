@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:createdBy="admin"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    courseArea="Workplace Safety and Health"
+    courseContent="Provide Guard and Patrol Services"
+    courseCost="12"
+    courseDetails=""
+    courseHours="12"
+    courseImageUrl=""
+    courseLang="Malay"
+    courseObjective="Provide Guard and Patrol Services"
+    courseRef="CRS-Q-0005220-SE"
+    courseTitle="Provide Guard and Patrol Services"
+    courseType="WSQ"
+    courseUrl=""
+    status="approved"/>

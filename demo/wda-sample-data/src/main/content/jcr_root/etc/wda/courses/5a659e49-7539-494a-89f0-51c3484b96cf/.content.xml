@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:createdBy="admin"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    courseArea="Service Excellence"
+    courseContent="Maintaining professional appearance and attitude&#xa;-Providing quality Service&#xa;-Addressing concerns."
+    courseCost="15"
+    courseDetails=""
+    courseHours="5"
+    courseImageUrl=""
+    courseLang="English"
+    courseObjective="Learner will have the knowledge and application skills in interacting with guests and be able to apply them to the workplace."
+    courseRef="CRS-Q-0005239-TH"
+    courseTitle="Interact with Guests"
+    courseType="WSQ"
+    courseUrl="http://www.sgci.com.sg"
+    status="approved"/>

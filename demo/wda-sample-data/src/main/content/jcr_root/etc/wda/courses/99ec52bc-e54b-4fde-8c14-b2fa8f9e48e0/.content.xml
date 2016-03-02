@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:createdBy="admin"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    courseArea="IT &amp; Software / Network &amp; Security"
+    courseContent="Gain the ability to do ethical hacking and penetration testing by taking this course! Get answers from an experienced IT expert to every single question you have related to the learning you do in this course including installing Kali Linux, using VirtualBox, basics of Linux, Tor, Proxychains, VPN, Macchanger, Nmap, cracking wifi, aircrack, DoS attacks, SLL strip, known vulnerabilities, SQL injections, cracking Linux passwords, and more topics that are added every month!&#xd;&#xa;&#xd;&#xa;If you are like me, you are reading more now because you want to know for sure whether this course is worth taking before you invest your money and time in it. More than10,000 people have already completed the process of deciding to take this course and I hope sharing a few of their experiences can prove useful for you here. Here are what three recent students had to say in the reviews in their own words."
+    courseCost="35"
+    courseDetails=""
+    courseHours="116"
+    courseImageUrl="https://udemy-images.udemy.com/course/750x422/437490_c76a_4.jpg"
+    courseLang="English"
+    courseObjective="Learn how to do ethical hacking, penetration testing, web testing, and wifi hacking using kali linux!"
+    courseRef="UDM-01"
+    courseTitle="The Complete Ethical Hacking Course: Beginner to Advanced!"
+    courseType="NSRSAC"
+    courseUrl="https://www.udemy.com/penetration-testing/?dtcode=Z7NHKl44C5lE"
+    status="approved"/>

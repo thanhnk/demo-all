@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:createdBy="admin"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    courseArea="Others"
+    courseContent="Clean Hard Floors"
+    courseCost="100"
+    courseHours="5"
+    courseLang="English"
+    courseObjective="Clean Hard Floors"
+    courseRef="CRS-A-0001722-CNG"
+    courseTitle="Clean Hard Floors 2"
+    courseType="NSRSAC"
+    courseUrl=""
+    status="approved"/>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:createdBy="admin"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    courseArea="Development / Web Development"
+    courseContent="Looking to boost your income as a web developer? Or maybe you're seeking a career change that gives you more free time and flexibility?&#xd;&#xa;&#xd;&#xa;Whatever your motivation to become a pro web developer, you've come to the right place.&#xd;&#xa;&#xd;&#xa;The Complete Web Developer Course is THE most comprehensive, cost-effective and career-enhancing course you'll find on the web â or your money back.&#xd;&#xa;&#xd;&#xa;It's a one-stop-shop for everything you need to start creating professional websites that engage visitors, call them to action and ultimately - make you money!&#xd;&#xa;&#xd;&#xa;This fast, effective course takes you easily from zero skills to fee-earning web developer in just six weeks.&#xd;&#xa;&#xd;&#xa;Not only that but you'll get unlimited web hosting for one year. So you can start earning cash before you've even finished."
+    courseCost="35"
+    courseDetails=""
+    courseHours="236"
+    courseImageUrl="https://udemy-images.udemy.com/course/750x422/185774_cb62_3.jpg"
+    courseLang="English"
+    courseObjective="Web development from scratch in 6 weeks. HTML, JS, CSS, PHP, MySQL, Bootstrap, Wordpress, APIs, Mobile Apps all covered. Lifetime access with no subscription on Udemy.com."
+    courseRef="UDM-03"
+    courseTitle="The Complete Web Developer Course - Build 14 Websites"
+    courseType="NSRSAC"
+    courseUrl="https://www.udemy.com/complete-web-developer-course/?dtcode=8zMhPGR4C5lE"
+    status="approved"/>

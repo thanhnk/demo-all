@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:createdBy="admin"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    courseArea="Security and Investigation"
+    courseContent="1.    Handle General Enquiries and Requests.&#xa;2.    Telephone Etiquette.&#xa;3.    Proper Protocol in Providing Information and Assistance for Visitors.&#xa;4.    Proper Protocol on Dealing with Complaints, Emergencies and Unexpected Situations."
+    courseCost="80"
+    courseDetails=""
+    courseHours="20"
+    courseImageUrl=""
+    courseLang="English"
+    courseObjective="This module structured under the ES WSQ framework is to prepare the Learner in general Public Relations Management. Learners are given various scenarios of possible inquiries they may be required to handle in the course of their duties. Learners are guided in the model approach to handling general inquiries.."
+    courseRef="CRS-Q-0005250-SE"
+    courseTitle="Handle Enquiries and Requests"
+    courseType="NSRSAC"
+    courseUrl=""
+    status="approved"/>
