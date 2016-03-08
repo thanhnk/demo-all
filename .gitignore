@@ -1,2 +1,4 @@
-demo/course_suggestion.json
+*.project
+*.classpath
+solr-index/.settings/
 *.tmp
