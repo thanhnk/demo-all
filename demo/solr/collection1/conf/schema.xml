@@ -118,7 +118,7 @@
    <field name="courseLang"         type="text_general"           indexed="true"  stored="true"/>
    <field name="courseUrl"         type="string"           indexed="true"  stored="true"/>
    <field name="courseCost"         type="int"           indexed="true"  stored="true"/>
-   <field name="courseHours"         type="int"           indexed="true"  stored="true"/>
+   <field name="courseHours"         type="float"           indexed="true"  stored="true"/>
    
    <field name="status"         type="string"           indexed="true"  stored="true"/>
    
@@ -288,7 +288,7 @@
 	<copyField source="tags"   dest="tags_ss"/>
 	<copyField source="courseLang"   dest="courseLang_ss"/>
 	<copyField source="courseCost"   dest="courseCost_i"/>
-	<copyField source="courseHours"   dest="courseHours_i"/>
+	<copyField source="courseHours"   dest="courseHours_f"/>
 	<copyField source="courseType"   dest="courseType_s"/>
 	<copyField source="courseArea"   dest="courseArea_s"/>
 	

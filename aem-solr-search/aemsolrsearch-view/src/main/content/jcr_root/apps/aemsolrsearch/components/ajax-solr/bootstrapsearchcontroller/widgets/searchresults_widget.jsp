@@ -7,6 +7,7 @@
   --%>
 
 <c:if test="${resultsEnabled}">
+	
     
     AjaxSolr.ResultWidget = AjaxSolr.AbstractWidget.extend({
       start: 0,
@@ -55,8 +56,32 @@
         if (this.manager.response.spellcheck && this.manager.response.spellcheck.suggestions
 			&& this.manager.response.spellcheck.suggestions.collation){
 			var correctKey = this.manager.response.spellcheck.suggestions.collation.collationQuery;
-        	var doYouMean = 'Did you mean: <b class="searchForSpellCheck">'+ correctKey + '</b>?';
-        	$(this.target).prepend(doYouMean);
+        	var doYouMean = 'Did you mean: <a href="#" class="searchForSpellCheck">'+ correctKey + '</a>?';
+        	$(this.target).parent().find('#spellchecking').html(doYouMean);
+        	$(this.target).parent().find('#spellchecking > a').on('click', function(){
+        		//alert($(this).html());
+        		Manager.store.remove('q');
+        		Manager.store.addByValue('q',  $(this).html());
+        		Manager.doRequest();
+        	});
+        	
+        } else {
+        	$(this.target).parent().find('#spellchecking').html('');
+        }
+        
+        if (this.manager.response.response.docs.length < 10 && 
+        	this.manager.response.response.start + 10 < this.manager.response.response.numFound){
+        	var searchWithoutGrouping = 'In order to show you the most relevant results, '
+        	+ 'we have omitted some entries very similar to the 445 already displayed.'
+        	+ 'If you like, you can ' + '<a href="#">repeat the search with the omitted results included.</a>';
+        	$(this.target).parent().find('#searchWithoutGrouping').html(searchWithoutGrouping);
+        	$(this.target).parent().find('#searchWithoutGrouping > a').on('click', function(){
+        		Manager.store.addByValue('group', 'false');
+        		Manager.doRequest();
+        	});
+        	
+        } else {
+        	$(this.target).parent().find('#searchWithoutGrouping').html('');
         }
       },
 
@@ -127,6 +152,5 @@
       id: '${resultsId}',
       target: '${resultsTarget}'
     }));
-    
     
 </c:if>

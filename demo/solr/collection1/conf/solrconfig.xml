@@ -833,6 +833,10 @@
        <str name="df">text</str>
 	   
 	   <str name="facet.mincount">1</str>
+
+     <str name="group">true</str>
+     <str name="group.field">courseTitle</str>
+     <str name="group.main">true</str>
 	   
 	   <!-- Highlighting defaults -->
        <str name="hl">on</str>

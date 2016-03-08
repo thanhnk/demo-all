@@ -44,7 +44,7 @@
 	    		//alert(ui.item.facet);
 	    		Manager.store.removeByValue('fq', new RegExp('^courseArea_s:'));
 	    		Manager.store.addByValue('fq', 'courseArea_s:"' + ui.item.facet + '"');
-	    		Manager.store.addByValue('q',  ui.item.value)
+	    		Manager.store.addByValue('q',  ui.item.value);
 	    		Manager.doRequest();
     		}
     	},
