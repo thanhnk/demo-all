@@ -55,7 +55,7 @@
 	    	var keyword = '';
 	    	var keyword_point;
 	    	// First ajax call for getting keywork/phrase
-	    	var firstCallUrl = searchurl + '&q=*:*&facet=true&facet.limit=3&facet.field=suggest&facet.field=suggest_phrase&facet.prefix=' + request.term;
+	    	var firstCallUrl = searchurl + '&q=*:*&facet=true&facet.limit=3&facet.field=suggest&facet.field=phrase&facet.prefix=' + request.term;
 	    	jQuery.get(firstCallUrl, function (data) {
 	    		var obj = jQuery.parseJSON(data);
 	    		var list = obj.facet_counts.facet_fields.suggest;
@@ -68,7 +68,7 @@
 		            	}
 		            }
 	            }
-	            list = obj.facet_counts.facet_fields.suggest_phrase;
+	            list = obj.facet_counts.facet_fields.phrase;
 	    		if (list.length > 0){
 	    			if (list[1] > keyword_point){
 	    				keyword = list[0];

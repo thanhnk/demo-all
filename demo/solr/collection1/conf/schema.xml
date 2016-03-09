@@ -300,8 +300,8 @@
 	<copyField source="courseTitle" dest="name_auto" />
 	<copyField source="courseTitle" dest="phrase" />
 	<copyField source="courseTitle" dest="suggest_phrase" />
-	<copyField source="courseContent" dest="suggest_phrase" />
-	<copyField source="courseObjective" dest="suggest_phrase" />
+	<!--copyField source="courseContent" dest="suggest_phrase" />
+	<copyField source="courseObjective" dest="suggest_phrase" /-->
 	
 	<copyField source="courseTitle" dest="suggestEn" />
 	

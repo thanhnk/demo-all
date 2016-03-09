@@ -3,7 +3,6 @@ package sg.wda;
 import java.io.File;
 import java.util.Date;
 import java.util.Iterator;
-import java.util.UUID;
 import java.util.logging.Logger;
 
 import org.apache.commons.lang3.StringUtils;
@@ -45,6 +44,9 @@ public class Main {
 			if (StringUtils.isEmpty(sheetName)) {
 				throw new Exception("SheetName is empty");
 			}
+			log.info("Continue import sheet 2");
+			process();
+			sheetName = "default2";
 			process();
 		} catch (Exception e) {
 			log.warning("" + e);
@@ -71,7 +73,7 @@ public class Main {
 					log.info("Committed : " + commitNum * commitSize);
 					solr.close();
 					solr = new HttpSolrClient(SOLR_SERVER);
-					break;
+					// break;
 				}
 			}
 		}
@@ -81,15 +83,19 @@ public class Main {
 	private static SolrInputDocument convert(Row row) {
 		SolrInputDocument doc = new SolrInputDocument();
 
-		doc.addField(CourseSchema.ID, UUID.randomUUID().toString());
-
 		String courseRef = getCellStringValue(row.getCell(0));
 		if (StringUtils.isEmpty(courseRef)) {
 			return null;
 		}
 		doc.addField(CourseSchema.COURSEREF, courseRef);
-		doc.addField(CourseSchema.COURSETITLE,
-				getCellStringValue(row.getCell(1)));
+
+		doc.addField(CourseSchema.ID, courseRef);
+
+		// StringUtils.abbreviate(str, maxWidth)
+		String courseTitle = getCellStringValue(row.getCell(1));
+		courseTitle = StringTitleUtils.clean(courseTitle);
+		// courseTitle = StringTitleUtils.maxWords(courseTitle, 10);
+		doc.addField(CourseSchema.COURSETITLE, courseTitle);
 		doc.addField(CourseSchema.COURSETYPE,
 				getCellStringValue(row.getCell(2)));
 		doc.addField(CourseSchema.COURSEAREA,
