@@ -26,4 +26,6 @@ Television, Televisions, TV, TVs
 
 # Synonym mappings can be used for spelling correction too
 pixima => pixma
-
+manage,management,managing
+sme,small-and-medium size enterprises,small and medium size enterprises
+it,information technology
