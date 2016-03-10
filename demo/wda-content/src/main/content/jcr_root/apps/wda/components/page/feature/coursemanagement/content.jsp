@@ -5,12 +5,10 @@
 <%@page session="false"%>
 <%@include file="/libs/foundation/global.jsp"%>
 <%@include file="/apps/wda/global/global.jsp"%>
-<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
 <cq:includeClientLib categories="cq.widgets"/>
 <cq:includeClientLib categories="wda.coursemanagement"/>
 <%
 	String loginedUser = request.getUserPrincipal().getName();
-
 %>
 <div class="contentSection">
 	<div class="container">
@@ -95,7 +93,7 @@
 	</div>
 	<!-- end <div class="container"> -->
 	<center id="pagination"><a>1</a></center>
-	<div id="tester"><a>abc</a></center>
+
 </div>
 <cq:include script="/apps/wda/components/page/feature/coursemanagement/addnew.jsp"/>
 <script>
