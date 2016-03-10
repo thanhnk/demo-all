@@ -24,4 +24,5 @@ public interface CourseService {
 	public AJAXResponse queryCourse(SlingHttpServletRequest request);
 
 	public AJAXResponse solrIndex(SlingHttpServletRequest request);
+	
 }

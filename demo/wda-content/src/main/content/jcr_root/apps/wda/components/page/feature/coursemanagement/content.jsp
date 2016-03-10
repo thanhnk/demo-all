@@ -5,7 +5,7 @@
 <%@page session="false"%>
 <%@include file="/libs/foundation/global.jsp"%>
 <%@include file="/apps/wda/global/global.jsp"%>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
 <cq:includeClientLib categories="cq.widgets"/>
 <cq:includeClientLib categories="wda.coursemanagement"/>
 <%
@@ -37,14 +37,13 @@
 										class="input-group-btn">
                                 </span>
 							</div>
-                            <div class="form-group col-xs-4 ">
+                            <div class="form-group col-xs-4">
 								<label for="searchTitle">Title</label> 
                                 <input type="text" class="form-control" id="searchTitle"
 										name="searchTitle" placeholder="Search for..."> <span
 										class="input-group-btn">
                                 </span>
 							</div>
-							
 							<div class="form-group col-xs-2 ">
                                 <label for="status">&nbsp;</label> 
                                 <div class="input-group">
@@ -57,7 +56,9 @@
                                 </div>
                             </div>
                         </div>
-					</form>
+                        <input name="pageId" id="pageId" type="hidden" value="1">
+ 					</form>
+					<p id="totalRecordFound">Total of 0 record found.</p>
 					<div class="table-responsive">
 						<table class="table-striped table" id="tableListing">
 							<thead>
@@ -84,19 +85,26 @@
 								<td colspan="7">Loading please wait...</td>
 							</tr> -->
 						</table>
-						<p id="listInfo">Total of 0 items.</p>
 					</div>
 				</div>
 			</div>
 			<!-- end <div class="mainContent"> -->
 		</div>
+		
 		<!--  end <div class="contentHolder"> -->
 	</div>
 	<!-- end <div class="container"> -->
+	<center id="pagination"><a>1</a></center>
+	<div id="tester"><a>abc</a></center>
 </div>
 <cq:include script="/apps/wda/components/page/feature/coursemanagement/addnew.jsp"/>
 <script>
+
 	var loginedUser = '<%=loginedUser%>';
+	var totalRecord;
+	var limit;
+	var totalPagination;
+	
 	$(function(){
 		loadCourses();
 		
@@ -113,8 +121,25 @@
 		})
 	});
 	
+
+	// function for pagination numbers
+	function displayRecord(pageId) {
+		
+		if(pageId == "previous") {
+			$('#pageId').val((parseInt($('#pageId').val())-1 > 0) ? parseInt($('#pageId').val())-1 : 1);
+		}
+		else if(pageId == "next") {
+			$('#pageId').val(((parseInt($('#pageId').val())+1) < (Math.floor((totalRecord/limit)+1))) ? (parseInt($('#pageId').val())+1) : Math.floor((totalRecord/limit)+1));
+		}
+		else 
+			$('#pageId').val(pageId);
+		$('#tester').html($('#pageId').val());
+		loadCourses();
+	}
+
 	function loadCourses(){
 		var datastring = $("#searchForm").serialize();
+		
 		var aj = $.ajax({
 			url: "<%=resource.getPath()%>.load",
 			type: "POST",
@@ -126,16 +151,59 @@
 			if(jqXHR.hasOwnProperty("error") && jqXHR.error.length > 0){
 				showError(jqXHR.error[0]);
 			}
+			
 			if(jqXHR.hasOwnProperty("info") && jqXHR.info.length > 0){
 				console.log(jqXHR.info);
 				var table = $('#tableBody');
 				table.html('');
-				$('#listInfo').html('Total of ' + jqXHR.info.length + ' items.');
-				for (var i = 0; i < jqXHR.info.length; i++){
-					addCourseRow(table, jqXHR.info[i]);
+				$('#totalRecordFound').html('Total of ' + jqXHR.pagination.totalRecord + ' record(s) found');
+				for (var i = 0; i < jqXHR.pagination.LIMIT; i++){
+					if(jqXHR.info[i] != null) 
+						addCourseRow(table, jqXHR.info[i]);
 				}
+				
+				// initialize pagination values
+				totalRecord = jqXHR.pagination.totalRecord;
+				limit = jqXHR.pagination.LIMIT;
+				totalPagination = jqXHR.pagination.TOTAL_PAGINATION;
+				
+				displayPaginationNum();
 			}
 		});
+	}
+	
+	// find pagination number
+	function displayPaginationNum() {
+	
+		var pagination = '';
+		var range = 2;
+		var startingPoint = 0;
+		var endingPoint = 0;
+		
+		if(($('#pageId').val()) < 3) 
+			startingPoint = 1;
+		else 
+			startingPoint = ($('#pageId').val()) - range;
+		
+		if((startingPoint + totalPagination) <= Math.ceil((totalRecord/limit)+1)) 
+			endingPoint = startingPoint + totalPagination;
+		else {
+			endingPoint = Math.ceil((totalRecord/limit)+1);			
+			startingPoint = ((Math.ceil((totalRecord/limit)+1) - totalPagination) < 1 ? 1 : (Math.ceil((totalRecord/limit)+1) - totalPagination));
+		}
+		
+		// next buttons
+		pagination = '<div class="course-mngt-pagination"><ul class="pagination"><li><a id="previous" onclick="displayRecord(this.id); return false; "><i class="icon-chevron-left" data-purpose="pagination-clickable-next"></i></a><li>';
+		for (var i = startingPoint; i < endingPoint; i++)
+			pagination += '<li><a id="' + i + '" onclick="displayRecord(this.id); return false; ">' + i + '</a></li>';
+
+		pagination += '<li><a id="next" onclick="displayRecord(this.id); return false; "><i class="icon-chevron-right" data-purpose="pagination-clickable-next"></i></a></li></div>';
+		
+		$('#pagination').html(pagination);
+		$('#pagination').val(pagination);
+		
+		// highlight page
+		$('#' + $('#pageId').val() +'').addClass('active'); 
 	}
 	
 	function addCourseRow(table, row){
@@ -172,9 +240,11 @@
 		
 		table.append(html);
 	}
+	
 	function updateCourse(id){
 		alert('updated:' + id);
 	}
+	
 	function approveCourse(id){
 		var aj = $.ajax({
 			url: "<%=resource.getPath()%>.approve",
@@ -195,4 +265,6 @@
 			}
 		});
 	}
+	
 </script>
+
