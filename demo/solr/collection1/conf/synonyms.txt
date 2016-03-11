@@ -29,3 +29,4 @@ pixima => pixma
 manage,management,managing
 sme,small-and-medium size enterprises,small and medium size enterprises
 it,information technology
+proj,project
