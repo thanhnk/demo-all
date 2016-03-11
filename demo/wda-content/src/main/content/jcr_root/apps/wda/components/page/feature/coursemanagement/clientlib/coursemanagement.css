@@ -1,0 +1,14 @@
+.course-mngt-pagination .pagination>li>a {
+	border: none;
+}
+
+ul.pagination li a.active {
+    font-weight: bold;
+    color: black;
+}
+
+.highlight {
+	height:100px;
+    width:100px;
+	border:2px solid red;
+}

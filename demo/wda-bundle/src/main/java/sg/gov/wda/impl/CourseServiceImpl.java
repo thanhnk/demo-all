@@ -27,12 +27,14 @@ import org.apache.sling.jcr.resource.JcrResourceUtil;
 import org.apache.solr.client.solrj.SolrClient;
 import org.apache.solr.client.solrj.impl.HttpSolrClient;
 import org.apache.solr.client.solrj.response.UpdateResponse;
+import org.apache.zookeeper.server.Request;
 import org.osgi.framework.Constants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import sg.gov.wda.AJAXResponse;
 import sg.gov.wda.CourseService;
+import sg.gov.wda.Pagination;
 import sg.gov.wda.adapters.CourseContentType;
 import sg.gov.wda.adapters.CourseContentTypeFactory;
 import sg.gov.wda.adapters.CoursePage;
@@ -187,17 +189,27 @@ public class CourseServiceImpl implements CourseService {
 	public AJAXResponse queryCourse(SlingHttpServletRequest request) {
 
 		AJAXResponse ajaxResponse = new AJAXResponse();
-
+		Pagination pagination = new Pagination();
+		
+		log.info("TriggerBtn queryCourse: " + RequestUtil.getParameter(request, "pageId", "1"));
+		
+		String triggeredBtnId = RequestUtil.getParameter(request, "pageId", "1");
+		pagination.setTriggeredBtn(triggeredBtnId);
+		
+		ajaxResponse.setPagination(pagination);
+		
 		Map<String, String> params = new HashMap<String, String>();
 		params.put("path", COURSE_BASE_PATH);
 		params.put("type", JcrConstants.NT_UNSTRUCTURED);
-		params.put("p.offset", "0");
-		params.put("p.limit", "50");
+		params.put("p.offset", ajaxResponse.getPagination().getOffset()+"");
+		params.put("p.limit", ajaxResponse.getPagination().getLIMIT()+"");
+		params.put("p.guessTotal", "false");
 		params.put("orderby", "lastModified");
 		params.put("orderby.sort", "desc");
 
 		String searchStatus = RequestUtil.getParameter(request, "searchStatus",
 				"");
+		
 		if (StringUtils.isNoneEmpty(searchStatus)) {
 			params.put("property", CourseSchema.STATUS);
 			params.put("property.value", searchStatus);
@@ -224,7 +236,10 @@ public class CourseServiceImpl implements CourseService {
 			SearchResult results = query.getResult();
 
 			log.info("Found '{}' matches for query", results.getTotalMatches());
-
+			
+			pagination.setTotalRecord(results.getTotalMatches());
+			ajaxResponse.setPagination(pagination);
+			
 			for (Hit hit : results.getHits()) {
 
 				// The query returns the jcr:content node, so we need its
@@ -280,5 +295,4 @@ public class CourseServiceImpl implements CourseService {
 		}
 		session.save();
 	}
-
 }
