@@ -58,7 +58,7 @@
               'facet.field': <cqsearch:json attribute="facetsAvailableFacetKeys"/>,
               'facet.sort': '${facetsFacetSort}',
               'facet.limit': 20,
-              'facet.mincount': 1,
+              'facet.mincount': 0,
               </c:if>
 
               <%-- Build filter query request parameter list. --%>
